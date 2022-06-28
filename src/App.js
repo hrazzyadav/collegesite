@@ -1,34 +1,32 @@
+import Axios from 'axios';
+import React from 'react';
+import { NavLink, Route, Switch } from 'react-router-dom';
 import './App.css';
+import About from './Component/About';
+import Alumni from './Component/Alumni';
+import Civil from './Component/Branch/Civil';
+import Computer from './Component/Branch/Computer';
+import EandC from './Component/Branch/EandC';
+import Electrical from './Component/Branch/Electrical';
+import Mechanical from './Component/Branch/Mechanical';
+import Contact from './Component/Contact';
+import Front_center from './Component/Front_center';
+import Gallery from './Component/Gallery';
+import News from './Component/News';
+import Placement from './Component/Placement';
+import Staff from './Component/Staff';
+import Student from './Component/Student';
 import './fonts/font.ttf';
 import './fonts/monotype_font.ttf';
 import './fonts/Rakkas.ttf';
-import $ from 'jquery'
-import React from 'react';
-import Front_center from  './Component/Front_center'
-import About from  './Component/About'
-import News from  './Component/News'
-import Staff from './Component/Staff'
-import Student from './Component/Student'
-import Placement from './Component/Placement'
-import Alumni from './Component/Alumni'
-import Gallery from './Component/Gallery'
-import Contact from  './Component/Contact'
-import Civil from './Component/Branch/Civil';
-import Computer from './Component/Branch/Computer';
-import Electrical from './Component/Branch/Electrical';
-import EandC from './Component/Branch/EandC';
-import Mechanical from './Component/Branch/Mechanical';
 
-import {NavLink , Route, Switch } from 'react-router-dom';
-import { render } from '@testing-library/react';
-import Axios from 'axios';
 
 function App() {
 
   return (
    <div>
 <Header/>
-
+<Front_center/>
         <main>
             <Switch>
 
@@ -329,10 +327,10 @@ class Footer extends React.Component{
 
         </div>
 
-        <div className="suggestion">
+        {/* <div className="suggestion">
             <span className="suggest"> LOCATION </span> <br/>
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3786.451047654455!2d77.28065243234957!3d28.5634643286692!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfa52d7407045faf9!2sUniversity%20Polytechnic!5e1!3m2!1sen!2sin!4v1624809167344!5m2!1sen!2sin" height="130" width="250" style={{border:'0',borderRadius:'2px'}} allowfullscreen="" loading="lazy" ></iframe>
-        </div><br/>
+        </div><br/> */}
 
     </footer>     
 
