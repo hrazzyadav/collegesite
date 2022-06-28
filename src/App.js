@@ -115,7 +115,7 @@ class Header extends React.Component{
 
   var jmi_ani = document.getElementById('central');
 
-  var jmi_str = "(A Central University)";
+  var jmi_str = "(Panchsheel uchchatar madhyamik vidhyalay)";
   var i = 0;
   var j = 0;
   jmi_ani.style.height = 10+"px";
@@ -133,9 +133,9 @@ class Header extends React.Component{
        jmi_ani.textContent = ""
       j++;
       if(j%2!=0){
-        jmi_str = "   (NAAC Accredited '\A\' Grade)   ";
+        jmi_str = "   (Panchsheel uchchatar madhyamik vidhyalay)   ";
       }else{
-        jmi_str = "   (A Central University)   ";
+        jmi_str = "   (Panchsheel uchchatar madhyamik vidhyalay)   ";
       }
      }
   },100)
@@ -146,7 +146,7 @@ class Header extends React.Component{
      var search_text = document.getElementById('search_bar');
     if(search_text.value!=""){
 
-       window.open("https://www.google.com/search?q=jmi+polytechnic+"+search_text.value,'_blank');
+      //  window.open("https://www.google.com/search?q=jmi+polytechnic+"+search_text.value,'_blank');
     } 
   }
  document.getElementById('srch_btn').addEventListener('click',search_google);
@@ -160,14 +160,15 @@ render(){
           <header className='header'>
 
          <NavLink to="/college-website">
-        <img src={process.env.PUBLIC_URL+"/polytechnic/jamia.png"} className="jamia_logo"/>
+        <img src={"https://www.yoursnews.in/wp-content/uploads/2016/03/Buddhism-in-India.jpeg"} style={{borderRadius:"50%"}} className="jamia_logo"/>
       </NavLink>
+      
 
-       <img src={process.env.PUBLIC_URL+"/polytechnic/polyjmi.jpg"} className="polytechnic_logo"/>
+       <img src={"https://www.yoursnews.in/wp-content/uploads/2016/03/Buddhism-in-India.jpeg"} style={{borderRadius:"50%"}} className="polytechnic_logo"/>
      <NavLink to="/college-website" style={{textDecoration:"none"}}>
-     <h1 className="university_polytechnic"> <span> UNIVERSITY &nbsp; POLYTECHNIC </span> </h1> <br/>
+     <h1 className="university_polytechnic"> <span> Panchsheel &nbsp; Education </span> </h1> <br/>
      </NavLink>
-      <h3 className="jamia_millia_islamia"> JAMIA MILLIA ISLAMIA  <br/> <p id="central">(A central university)</p> </h3>
+      <h3 className="jamia_millia_islamia">   PUMV  <br/> <p id="central">(Panchsheel uchchatar madhyamik vidhyalay)</p> </h3>
 
 
       <li id="menu">
@@ -182,11 +183,11 @@ render(){
 
 
     <ul>
-      <li className="menu_ani"> <NavLink to="/college-website"> HOME </NavLink> </li>
-      <li className="menu_ani" id="abt"> <NavLink activeClassName="active_class" to="/about"> ABOUT  </NavLink>  </li>
-      <li className="menu_ani" > <NavLink activeClassName="active_class" to="/news"> NEWS </NavLink>    </li>
-      <li className="menu_ani"> <NavLink activeClassName="active_class" to="/staff"> STAFF </NavLink>   </li>
-      <li className="menu_ani"> <NavLink activeClassName="active_class" to="/student"> STUDENT </NavLink>  </li>
+      <li className="menu_ani"> <NavLink to="/"> HOME </NavLink> </li>
+      <li className="menu_ani" id="abt"> <NavLink activeClassName="active_class" to="/"> ABOUT  </NavLink>  </li>
+      <li className="menu_ani" > <NavLink activeClassName="active_class" to="/"> NEWS </NavLink>    </li>
+      <li className="menu_ani"> <NavLink activeClassName="active_class" to="/"> STAFF </NavLink>   </li>
+      {/* <li className="menu_ani"> <NavLink activeClassName="active_class" to="/student"> STUDENT </NavLink>  </li>
       <li> 
           <a href="#" className="arrow"> BRANCH  </a> 
             <div className="sub"> 
@@ -202,9 +203,9 @@ render(){
       </li>
       <li className="menu_ani"> <NavLink activeClassName="active_class" to="/placement"> PLACEMENT </NavLink> </li>
       <li className="menu_ani"> <NavLink activeClassName="active_class" to="/alumni"> ALUMNI </NavLink> </li>
-      
-      <li className="menu_ani"> <NavLink activeClassName="active_class" to="/gallery"> GALLERY </NavLink> </li>
-      <li className="menu_ani"> <NavLink activeClassName="active_class" to="/contact"> CONTACT </NavLink> </li>
+       */}
+      <li className="menu_ani"> <NavLink activeClassName="active_class" to="/"> GALLERY </NavLink> </li>
+      <li className="menu_ani"> <NavLink activeClassName="active_class" to="/"> CONTACT </NavLink> </li>
       <li> <input type="search" placeholder="Search" className="search_bar" id="search_bar"/>  </li>
       <li>  <input type="button" className="submit_button" id="srch_btn" /> </li>
     </ul>
@@ -272,15 +273,14 @@ class Footer extends React.Component{
 <footer>
            <div className="pic">
   
-               <img src={process.env.PUBLIC_URL+"/polytechnic/jamia.png"} alt="" height="120"/><br/><br/>
+               <img src="https://www.yoursnews.in/wp-content/uploads/2016/03/Buddhism-in-India.jpeg" style={{borderRadius:'50%'}} alt="" height="120"/><br/><br/>
            </div>
         <div className="contact">
             <span className="about_us"> ADDRESS <span className="bor_bott"></span> </span> <br/>
             <img src={process.env.PUBLIC_URL+"/polytechnic/adress_icon.png"} alt="" height="20px" width="15px"/>
-            <span className="address"> &nbsp;&nbsp;University Polytechnic,<br/>
-                &nbsp; &nbsp;&nbsp; &nbsp;Jamia Millia Islamia,<br/>
-                &nbsp; &nbsp;&nbsp; &nbsp;Jamia Nagar, Okhla, <br/>
-                &nbsp; &nbsp;&nbsp; &nbsp;New Delhi-110025</span>
+            <span className="address"> &nbsp;&nbsp;Panchsheel uchchatar madhyamik vidhyalay,<br/>
+                &nbsp; &nbsp;&nbsp; &nbsp;Balua mod, Tulsipur Road,,<br/>
+                &nbsp; &nbsp;&nbsp; &nbsp;Balrampur-271201</span>
             <hr/>
            
             <br/><br/>
@@ -292,14 +292,14 @@ class Footer extends React.Component{
                 <span className="call"> <img src={process.env.PUBLIC_URL+"/polytechnic/call.png"} alt="" height="" width="15px"/>
                     &nbsp; 
                 </span>
-                +91 9548097513
+                +91 7007315746
                 </span> &nbsp;&nbsp;<br/>
             <hr/> 
             &nbsp;&nbsp; <span className="jamia_link"> 
                 <span className="msg"> <img src={process.env.PUBLIC_URL+"/polytechnic/message.png"} alt="" height="" width="20px"/>
                     &nbsp;
                 </span>
-                polytechnic@jmi.ac.in
+                pumv@gmail.com
                 </span> &nbsp;&nbsp;<br/>
             <hr/>
             &nbsp;&nbsp; <a href="http:\\jmi.ucanapply.com" target="_blank"> <span className="jamia_link"> 
@@ -337,7 +337,7 @@ class Footer extends React.Component{
 
   <div className="copyright">
 
-    Copyright © 2021 University Polytechnic, JMI, New Delhi. All Rights Reserved.
+    Copyright © 2022 Panchsheel uchchatar madhyamik vidhyalay. All Rights Reserved.
  </div> 
      </div>
   )

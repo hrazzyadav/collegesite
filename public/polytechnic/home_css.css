@@ -40,13 +40,10 @@ img.jamia_logo{
 }  
 img.polytechnic_logo{
   float: right;
-  height: 150px;
-  width:190px;
   top:20px;
   right:23px;
   border-radius: 50%;
   position:relative;
-  box-shadow: -1px -1px 1px black,1px 1px 1px black;
 }   
 h1.university_polytechnic{
   font-size:65px;
